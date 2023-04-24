@@ -9,4 +9,5 @@ RUN npm install --location=global @angular/cli
 RUN yarn add @angular-devkit/build-angular --dev
 RUN yarn install
 RUN ng update --allow-dirty --force
+RUN npm update --force
 CMD ["ng", "serve", "--disableHostCheck", "true", "--host", "0.0.0.0"]
